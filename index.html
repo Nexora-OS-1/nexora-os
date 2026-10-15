@@ -1,0 +1,526 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080d19">
+
+  <meta name="description" content="NEXORA OS is an experimental Debian-based Linux operating system project built for developers, curious minds, customization and learning.">
+
+  <title>NEXORA OS — Your System. Your Rules.</title>
+
+  <link rel="stylesheet" href="style.css?v=20261015e">
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="navbar">
+    <a class="logo" href="#home" aria-label="NEXORA OS home">
+      <span class="logo-symbol">N</span>
+      <span>NEXORA<span class="accent"> OS</span></span>
+    </a>
+
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#features">Features</a>
+      <a href="#download">Download</a>
+      <a href="#guide">Boot guide</a>
+      <a href="#requirements">Requirements</a>
+    </nav>
+
+    <a
+      class="nav-discord"
+      href="#community" data-discord-link
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Discord invite awaiting confirmation <span aria-hidden="true">↗</span>
+    </a>
+  </header>
+
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero section-container" id="home">
+      <div class="hero-content">
+        <div class="status-pill">
+          <span class="status-dot"></span>
+          INDEPENDENT LINUX PROJECT · IN DEVELOPMENT
+        </div>
+
+        <p class="eyebrow">A NEW ENVIRONMENT FOR YOUR IDEAS</p>
+
+        <h1>
+          Your system.<br>
+          <span class="gradient-text">Your environment.<br>Your rules.</span>
+        </h1>
+
+        <p class="hero-description">
+          Meet NEXORA OS — an experimental Debian-based Linux
+          operating system project designed around exploration,
+          development and customization. Build your tools, explore
+          Linux, experiment with code and create an environment
+          that works for you.
+        </p>
+
+        <div class="hero-buttons">
+          <a class="button button-primary" href="#download"><span class="button-icon" aria-hidden="true">↓</span> Download Nexora OS</a>
+          <a class="button button-secondary" href="#guide">How to boot safely <span aria-hidden="true">→</span></a>
+        </div>
+
+        <div class="hero-notes">
+          <span><span class="mini-check">✓</span> Debian 13 · amd64</span>
+          <span><span class="mini-check">✓</span> BIOS and UEFI image structure</span>
+          <span><span class="mini-check">✓</span> Live-only · no installer</span>
+        </div>
+      </div>
+
+      <!-- Decorative system preview -->
+      <div class="system-preview" aria-label="Illustrative NEXORA terminal preview">
+        <div class="window-top">
+          <div class="window-dots">
+            <span></span><span></span><span></span>
+          </div>
+          <span class="window-title">nexora-terminal</span>
+          <span class="window-menu">•••</span>
+        </div>
+
+        <div class="terminal-content">
+          <div class="terminal-brand">
+            <div class="terminal-logo">N</div>
+            <div>
+              <p class="terminal-name">NEXORA OS</p>
+              <p class="terminal-subtitle">YOUR SYSTEM. YOUR RULES.</p>
+            </div>
+          </div>
+
+          <div class="terminal-line">
+            <span class="terminal-user">nexora@system</span><span class="terminal-path">:~$</span>
+            <span> neofetch</span>
+          </div>
+
+          <div class="terminal-info">
+            <p><span>OS</span> NEXORA OS <span class="muted">/ Debian base</span></p>
+            <p><span>DESKTOP</span> XFCE</p>
+            <p><span>SHELL</span> Bash</p>
+            <p><span>TOOLS</span> Terminal · Browser · Files</p>
+            <p><span>FOCUS</span> Development & Learning</p>
+          </div>
+
+          <div class="terminal-line command-line">
+            <span class="terminal-user">nexora@system</span><span class="terminal-path">:~$</span>
+            <span class="typing-text"> ready_to_build</span>
+            <span class="cursor"></span>
+          </div>
+
+          <p class="preview-disclaimer">
+            Illustrative preview — not a live screenshot.
+          </p>
+        </div>
+      </div>
+
+      <div class="hero-glow"></div>
+    </section>
+
+
+    <!-- PROJECT INTRO -->
+    <section class="intro-section section-container" id="about">
+      <div class="section-heading">
+        <p class="eyebrow">MORE THAN A DESKTOP</p>
+        <h2>A foundation for <span class="gradient-text">what comes next.</span></h2>
+      </div>
+
+      <div class="intro-grid">
+        <div class="intro-main">
+          <p>
+            NEXORA OS is being developed as a practical Linux environment
+            for people who want to understand their system, work with
+            development tools and explore what they can build with open
+            technologies.
+          </p>
+
+          <p>
+            Built on Debian's software ecosystem, the project aims to bring
+            together a familiar desktop, useful everyday applications and
+            a developer-friendly workspace in one branded environment.
+          </p>
+        </div>
+
+        <div class="intro-side">
+          <div class="mini-stat">
+            <span class="stat-number">01</span>
+            <div>
+              <h3>Linux foundation</h3>
+              <p>Built around Debian and established Linux tools.</p>
+            </div>
+          </div>
+
+          <div class="mini-stat">
+            <span class="stat-number">02</span>
+            <div>
+              <h3>Development focus</h3>
+              <p>A place to learn, write code and test ideas.</p>
+            </div>
+          </div>
+
+          <div class="mini-stat">
+            <span class="stat-number">03</span>
+            <div>
+              <h3>Community-driven</h3>
+              <p>Feedback and testing help guide future improvements.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- FEATURES -->
+    <section class="features-section section-container" id="features">
+      <div class="section-heading">
+        <p class="eyebrow">BUILT AROUND YOUR WORKFLOW</p>
+        <h2>One system. <span class="gradient-text">Many possibilities.</span></h2>
+        <p class="section-description">
+          NEXORA aims to provide a useful starting point for daily computing,
+          software development and technical exploration.
+        </p>
+      </div>
+
+      <div class="feature-grid">
+
+        <article class="feature-card">
+          <div class="feature-number">01 / SYSTEM</div>
+          <div class="feature-icon">⌘</div>
+          <h3>A Linux environment</h3>
+          <p>
+            Explore a Debian-based operating system with a Linux kernel,
+            an XFCE desktop environment and access to familiar Linux tools.
+            Learn how the pieces of an operating system work together.
+          </p>
+          <span class="feature-tag">Debian · Linux · XFCE</span>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-number">02 / DEVELOPMENT</div>
+          <div class="feature-icon">{ }</div>
+          <h3>Made for developers</h3>
+          <p>
+            Work with programming languages and command-line tools.
+            The planned development environment focuses on C++, Python,
+            compiling code, managing files and building personal projects.
+          </p>
+          <span class="feature-tag">C++ · Python · CLI</span>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-number">03 / WORKSPACE</div>
+          <div class="feature-icon">▦</div>
+          <h3>Everyday essentials</h3>
+          <p>
+            The live-image configuration includes a desktop, terminal,
+            file manager, web browser and system utilities, giving users
+            a starting point for exploring and working in Linux.
+          </p>
+          <span class="feature-tag">Desktop · Files · Browser</span>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-number">04 / CUSTOMIZATION</div>
+          <div class="feature-icon">◈</div>
+          <h3>Your own workflow</h3>
+          <p>
+            NEXORA uses a dark navy and cyan visual identity.
+            Future improvements aim to make the desktop more cohesive,
+            personal and convenient to use.
+          </p>
+          <span class="feature-tag">Interface · Workflow · Design</span>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-number">05 / EXPLORATION</div>
+          <div class="feature-icon">⌁</div>
+          <h3>Learn by experimenting</h3>
+          <p>
+            Explore command-line utilities, inspect system information,
+            understand processes and test software in suitable virtual
+            machines or other isolated environments.
+          </p>
+          <span class="feature-tag">Learning · Testing · Virtualization</span>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-number">06 / CONNECTIVITY</div>
+          <div class="feature-icon">◎</div>
+          <h3>Connected tools</h3>
+          <p>
+            The project includes networking support in its package plan.
+            Available connections and hardware compatibility will depend
+            on the device and the firmware it requires.
+          </p>
+          <span class="feature-tag">Networking · Hardware support</span>
+        </article>
+
+      </div>
+
+      <p class="section-footnote">
+        Feature descriptions reflect the current project direction.
+        Availability and behavior must be confirmed in the released build.
+      </p>
+    </section>
+
+
+    <!-- DEVELOPERS -->
+    <section class="developer-section" id="developers">
+      <div class="section-container developer-layout">
+        <div class="developer-copy">
+          <p class="eyebrow">FOR BUILDERS AND CURIOUS MINDS</p>
+
+          <h2>
+            From your first command<br>
+            to your next <span class="gradient-text">big idea.</span>
+          </h2>
+
+          <p>
+            A Linux system is more than a graphical interface.
+            It gives you access to a powerful command line, software
+            packages, development utilities and tools for understanding
+            how applications interact with the operating system.
+          </p>
+
+          <p>
+            NEXORA is intended to make this environment approachable
+            while leaving room to explore deeper technical concepts.
+            Whether you are learning to code, creating a utility or
+            experimenting with a test project, the goal is to give
+            you a useful place to begin.
+          </p>
+
+          <a class="text-link" href="#community">
+            Follow development <span>→</span>
+          </a>
+        </div>
+
+        <div class="code-window">
+          <div class="code-window-header">
+            <span>hello_nexora.py</span>
+            <span>PYTHON</span>
+          </div>
+
+          <pre><code><span class="code-purple">def</span> <span class="code-blue">build_idea</span>():
+    idea = <span class="code-green">"Something new"</span>
+
+    <span class="code-purple">if</span> idea:
+        <span class="code-purple">return</span> <span class="code-green">"Start building."</span>
+
+print(build_idea())</code></pre>
+
+          <div class="code-output">
+            <span class="output-dot"></span>
+            Example code preview · Not an application feature
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- SECURITY -->
+    <section class="security-section section-container" id="security">
+      <div class="security-card">
+        <div class="security-mark">+</div>
+
+        <div class="security-copy">
+          <p class="eyebrow">RESPONSIBLE EXPERIMENTATION</p>
+          <h2>Explore carefully. <span class="gradient-text">Build responsibly.</span></h2>
+
+          <p>
+            NEXORA is an experimental project, not a security certification.
+            Its Linux foundation provides established system tools, but
+            the project's own configuration, packages and desktop still
+            require testing.
+          </p>
+
+          <p>
+            Use virtual machines for unfamiliar software and potentially
+            disruptive experiments. Keep backups, review commands before
+            running them, and avoid testing unknown code on important
+            personal data or production systems.
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="release-section section-container" id="download" aria-labelledby="download-title">
+      <div class="release-card">
+        <div class="release-copy">
+          <p class="eyebrow">NEXORA OS · EXPERIMENTAL LIVE IMAGE</p>
+          <h2 id="download-title">Download <span class="gradient-text">NEXORA OS</span></h2>
+          <p class="section-description">A Debian 13 live desktop for x86-64 PCs. Try it in a virtual machine first. Downloading the ISO does not install or change your computer.</p>
+          <div class="release-status"><span class="status-dot"></span><span><strong>Boot status:</strong> BIOS desktop boot is verified in QEMU. UEFI boot starts Linux and XFCE processes, but graphical output remains unverified. Physical hardware and Secure Boot are unverified.</span></div>
+          <a id="iso-download" class="button button-primary download-button" href="downloads/NexoraOS-0.1.0.iso" download="NexoraOS-0.1.0.iso">
+            <span aria-hidden="true">↓</span> <span>Download ISO</span><span class="download-size">1.29 GiB</span>
+          </a>
+          <p class="download-state" id="download-state" role="status" aria-live="polite">Release package includes the ISO and checksum file. If the download does not start, use the guide below.</p>
+        </div>
+        <div class="release-details" aria-label="Verified ISO details">
+          <div><span>FILE</span><strong>NexoraOS-0.1.0.iso</strong></div>
+          <div><span>VERSION</span><strong>NEXORA OS 0.1.0 · Debian 13</strong></div>
+          <div><span>SIZE</span><strong>1,384,349,696 bytes · 1.29 GiB</strong></div>
+          <div><span>BUILT</span><strong>15 October 2026</strong></div>
+          <div class="checksum-box"><span>SHA-256</span><code id="iso-checksum">40BFE8B380D93224D88EEB210EE3487270289547E130999D615409DE87AB53A0</code><button class="copy-button" id="copy-checksum" type="button" aria-label="Copy ISO SHA-256 checksum">Copy checksum</button><span id="copy-status" role="status" aria-live="polite"></span></div>
+          <p class="small-note">The displayed checksum is for this release file. Recheck it after downloading before booting.</p>
+        </div>
+      </div>
+      <div class="info-callout"><strong>Windows verification:</strong> Open PowerShell in the download folder and run <code>Get-FileHash .\NexoraOS-0.1.0.iso -Algorithm SHA256</code>. Compare the result with the checksum above. A mismatch means the file may be incomplete or altered; do not boot it.</div>
+      <div class="info-callout hosting-note"><strong>Public website:</strong> This page is hosted with GitHub Pages. The ISO is provided as a GitHub Release download. Downloading the ISO does not install it; follow the safe virtual-machine or USB guide below.</div>
+    </section>
+
+    <section class="guide-section section-container" id="guide" aria-labelledby="guide-title">
+      <div class="section-heading">
+        <p class="eyebrow">BEGINNER-FRIENDLY · SAFETY FIRST</p>
+        <h2 id="guide-title">How to boot <span class="gradient-text">NEXORA OS</span></h2>
+        <p class="section-description">Start with a virtual machine. The ISO is a live system: it can be tried without installation, and changes are temporary. A NEXORA installer and USB persistence are not included.</p>
+      </div>
+      <div class="safety-callout"><strong>Protect your files.</strong> Do not select your Windows disk in a VM or installer. No installer is present in this image. Writing an ISO to USB erases the selected USB drive.</div>
+      <article class="guide-method" id="try-vm">
+        <div class="method-heading"><span class="method-number">A</span><div><p class="eyebrow">RECOMMENDED</p><h3>Try NEXORA in a virtual machine</h3><p>Test the live desktop without changing your PC's boot setup. QEMU BIOS reaches the desktop. UEFI reaches Linux and starts XFCE processes, but its graphical output remains unverified; VirtualBox is a convenient beginner option, but is not itself tested here.</p></div></div>
+        <ol class="steps">
+          <li><strong>Install VirtualBox</strong> from <a href="https://www.virtualbox.org/wiki/Downloads" target="_blank" rel="noopener noreferrer">the official VirtualBox downloads page</a>. Use the installer for your Windows host and keep its standard security prompts enabled.</li>
+          <li><strong>Create a new VM.</strong> Choose Linux and Debian (64-bit), with x86-64 architecture. Give it 4 GB RAM and 2 virtual CPUs for this test profile; these are tested settings, not published minimum requirements.</li>
+          <li><strong>Attach the ISO as an optical disc.</strong> In the VM's storage settings choose <code>NexoraOS-0.1.0.iso</code> from the downloaded files. Do not attach a host physical disk.</li>
+          <li><strong>Start the VM</strong> and select the normal live entry if a boot menu appears. Wait for the NEXORA XFCE desktop. You can use the file manager and terminal in the live session.</li>
+          <li><strong>Finish safely.</strong> Use the desktop's Log Out / Shut Down control, or close the VM and choose power off. The live session is non-persistent; unsaved files inside it are lost when it stops.</li>
+        </ol>
+        <p class="small-note">A virtual disk is not required to try the live image. If you add one for unrelated VM experiments, create a new disposable virtual disk in the VM application; never map a physical Windows disk.</p>
+      </article>
+      <article class="guide-method" id="make-usb">
+        <div class="method-heading"><span class="method-number">B</span><div><p class="eyebrow">OPTIONAL · DESTRUCTIVE TO THE USB</p><h3>Create a bootable USB</h3><p>The ISO is an isohybrid image with BIOS and x86-64 UEFI boot entries. It does not establish Secure Boot compatibility.</p></div></div>
+        <ol class="steps">
+          <li><strong>Back up the USB.</strong> Writing an image erases all data on the selected USB. Copy anything important elsewhere and disconnect other removable drives to reduce selection mistakes.</li>
+          <li><strong>Download and open balenaEtcher</strong> from <a href="https://etcher.balena.io/" target="_blank" rel="noopener noreferrer">its official site</a>, or use Rufus from <a href="https://rufus.ie/" target="_blank" rel="noopener noreferrer">rufus.ie</a>.</li>
+          <li><strong>Select the ISO</strong> and carefully check the target device name and capacity. Choose only the USB drive. Do not choose an internal SSD/HDD.</li>
+          <li><strong>Write the image.</strong> Etcher writes the hybrid image directly. In Rufus, accept the recommended ISOHybrid/DD image-writing mode if prompted; do not manually repartition the image or choose a filesystem. BIOS and UEFI boot files are inside the ISO.</li>
+          <li><strong>Wait for verification</strong> from the writer, then safely eject the USB in Windows. Do not unplug it during writing.</li>
+        </ol>
+      </article>
+      <article class="guide-method" id="boot-usb">
+        <div class="method-heading"><span class="method-number">C</span><div><p class="eyebrow">LIVE TEST · NO INSTALLER</p><h3>Boot from USB and return to Windows</h3><p>Try NEXORA OS in live mode only. The image has no installer, and this guide does not ask you to change disks or firmware settings.</p></div></div>
+        <ol class="steps">
+          <li>Leave the USB connected and restart the PC. Immediately press the manufacturer's one-time boot-menu key (often F12, F11, Esc, or F9; check your device manual). Keys vary by manufacturer.</li>
+          <li>Choose the USB entry. For UEFI systems, choose the entry explicitly labelled UEFI if both appear. If it fails, use the troubleshooting steps below; Secure Boot behavior has not been tested.</li>
+          <li>Choose the normal NEXORA live entry. Use the system without opening a disk utility that writes changes. Hardware support varies; physical PC compatibility is unverified.</li>
+          <li>To return to Windows, shut down from the live desktop, remove the USB when powered off, then start the PC and select Windows Boot Manager if needed. Do not change persistent boot order.</li>
+        </ol>
+      </article>
+      <article class="guide-method" id="first-run">
+        <div class="method-heading"><span class="method-number">D</span><div><p class="eyebrow">AFTER LIVE BOOT</p><h3>Use the live desktop</h3></div></div>
+        <ul class="steps"><li>The live desktop signs in automatically as the NEXORA live user; there is no account setup wizard in this build.</li><li>Use XFCE Settings for display, keyboard, time and desktop controls. In a VM, display and network devices are virtualized.</li><li>NetworkManager is included; connection availability depends on the hardware or VM network mode. Browser loading on physical Wi-Fi has not been certified.</li><li>Debian packages use APT, but installing packages in the live session is temporary and requires network access. There is no persistent storage configuration.</li><li><strong>Install NEXORA OS:</strong> not available. Do not look for or expect an installer. A future installer must be separately implemented and tested on a disposable VM disk.</li></ul>
+      </article>
+      <section class="troubleshooting" id="troubleshooting" aria-labelledby="troubleshooting-title">
+        <h3 id="troubleshooting-title">Troubleshooting</h3>
+        <details><summary>It returns to Windows or the USB is missing</summary><p>Reopen the one-time boot menu and select the USB explicitly. Check that the image writer completed. If two USB entries appear, choose UEFI on an UEFI PC. Device keys differ; consult the manufacturer.</p></details>
+        <details><summary>Black screen or graphics issue</summary><p>Try the ISO's Debian live fail-safe entry if it appears. In a VM, enable its standard virtual graphics adapter and 3D acceleration only if needed. A VM test does not guarantee your physical GPU will work.</p></details>
+        <details><summary>Secure Boot blocks startup</summary><p>Secure Boot has not been verified for this image. Do not disable firmware security permanently. Check the project release notes for a signed build before changing Secure Boot settings.</p></details>
+        <details><summary>Download is incomplete or checksum differs</summary><p>Download again from the release folder and recalculate the SHA-256. Do not boot a file whose checksum does not match the published value.</p></details>
+        <details><summary>How do I install or keep files between sessions?</summary><p>This release is live-only. It has no installer and no tested persistence mode. Save needed work somewhere outside the live environment before shutting down.</p></details>
+      </section>
+      <section class="faq" id="faq" aria-labelledby="faq-title"><h3 id="faq-title">Frequently asked questions</h3>
+        <details><summary>Does downloading install NEXORA?</summary><p>No. The ISO is a bootable live image. Downloading only saves a file; booting it runs a temporary live system. This release does not install itself.</p></details>
+        <details><summary>Is the ISO verified on real PCs?</summary><p>BIOS was tested through the desktop in QEMU. In UEFI mode, Linux started and XFCE processes appeared, but the graphical output was not verified. Physical hardware, Secure Boot, Wi-Fi, Bluetooth, GPU acceleration and peripherals remain unverified.</p></details>
+        <details><summary>Does the live session save my files?</summary><p>No persistence is configured. Session changes are lost at shutdown. The host's disk is not modified automatically, but you should avoid writing to host drives from a live session.</p></details>
+        <details><summary>What should I include in a bug report?</summary><p>Include the ISO version, checksum, VM or PC model, BIOS/UEFI mode, exact error and steps to reproduce. Remove usernames, serial numbers, private files and credentials from logs or screenshots.</p></details>
+      </section>
+    </section>
+
+    <section class="requirements-section section-container" id="requirements">
+      <div class="section-heading"><p class="eyebrow">VERIFIED SCOPE</p><h2>About and <span class="gradient-text">system requirements</span></h2><p class="section-description">This is an experimental Debian 13 live image for x86-64 PCs. The project has no published minimum physical-hardware requirements yet.</p></div>
+      <div class="requirements-grid"><article class="feature-card"><h3>What is included</h3><p>Debian GNU/Linux 13 (trixie), amd64 kernel, XFCE live desktop, NEXORA GTK shell, Firefox ESR, Thunar, terminal, developer tools and interactive diagnostics.</p></article><article class="feature-card"><h3>Test profile</h3><p>QEMU test used 4 GiB RAM and 2 vCPUs. These settings are a practical VM test profile, not a guaranteed minimum or physical hardware certification.</p></article><article class="feature-card"><h3>Known limits</h3><p>Live-only, no installer, no persistence. Secure Boot, physical GPU acceleration, Wi-Fi, audio devices and compatibility across PC models are unverified.</p></article></div>
+      <div class="info-callout"><strong>Recovery:</strong> Before using any recovery or partition tool, identify the target disk by model and capacity, back up important files, and do not write to a disk you are trying to recover. Recovery tools can cause data loss when misused.</div>
+    </section>
+    <!-- ROADMAP -->
+    <section class="roadmap-section section-container" id="roadmap">
+      <div class="section-heading">
+        <p class="eyebrow">THE ROAD AHEAD</p>
+        <h2>Built step by step.</h2>
+        <p class="section-description">
+          Development is ongoing. Each stage needs testing before it can
+          be considered complete.
+        </p>
+      </div>
+
+      <div class="roadmap-list"><div class="roadmap-item"><div class="roadmap-marker"></div><div class="roadmap-content"><span class="roadmap-status status-progress">LIVE IMAGE</span><h3>Debian 13 · amd64</h3><p>BIOS desktop boot verified in QEMU; UEFI reaches Linux and starts XFCE components. This is not physical hardware certification.</p></div></div><div class="roadmap-item"><div class="roadmap-marker"></div><div class="roadmap-content"><span class="roadmap-status status-testing">NOT INCLUDED</span><h3>Installer and persistence</h3><p>No installer, persistent storage, snapshot manager, or VM manager is included.</p></div></div><div class="roadmap-item"><div class="roadmap-marker"></div><div class="roadmap-content"><span class="roadmap-status status-planned">NEXT</span><h3>Broader hardware verification</h3><p>Test Secure Boot, additional PC models, wireless adapters, audio and graphics hardware.</p></div></div></div><div class="release-notice"><span class="notice-icon">i</span><p><strong>Release status:</strong> BIOS desktop boot is verified in QEMU. UEFI reaches Linux and starts XFCE processes, but its graphical output remains unverified. No installer or persistence is included.</p></div>
+    </section>
+
+
+    <!-- COMMUNITY -->
+    <section class="community-section section-container" id="community">
+      <div class="community-card">
+        <div class="community-orb"></div>
+
+        <p class="eyebrow">THE NEXORA COMMUNITY</p>
+        <h2>Be part of <span class="gradient-text">the journey.</span></h2>
+
+        <p>
+          Have a question, discovered an issue, or want to follow the
+          development of NEXORA OS? Join the community to share feedback,
+          discuss ideas and keep up with project updates.
+        </p>
+
+        <a
+          class="button button-primary"
+          href="#community" data-discord-link
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Discord invite awaiting confirmation <span aria-hidden="true">↗</span>
+        </a>
+
+        <p class="discord-address">Invite URL needs owner confirmation before it is enabled.</p>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <a class="logo" href="#home">
+      <span class="logo-symbol">N</span>
+      <span>NEXORA<span class="accent"> OS</span></span>
+    </a>
+
+    <p>
+      An independent experimental Linux project.<br>
+      Built with curiosity. Developed step by step.
+    </p>
+
+    <div class="footer-links">
+      <a href="#about">About</a>
+      <a href="#roadmap">Roadmap</a>
+      <a href="#community" data-discord-link
+         target="_blank"
+         rel="noopener noreferrer">Discord invite awaiting confirmation</a>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 NEXORA OS</span>
+      <span>Not affiliated with Debian or the XFCE project.</span>
+    </div>
+  </footer>
+
+  <script src="site-config.js?v=20261015e" defer></script>
+  <script src="site.js?v=20261015e" defer></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
